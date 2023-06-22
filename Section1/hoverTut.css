@@ -1,0 +1,16 @@
+div:hover {
+    background-color: blue;
+
+}
+
+h1:hover {
+
+    text-align: center;
+    font-size: 90px;
+    color: white;
+    background-color: yellow;
+}
+
+button:hover {
+    border-radius: 40px;
+}

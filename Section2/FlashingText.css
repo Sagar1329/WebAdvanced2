@@ -1,0 +1,53 @@
+.hat {
+    height: 120px;
+    animation-name: rainbowtext;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.secondimg {
+    margin-left: 60px;
+    height: 500px;
+}
+
+@keyframes rainbowtext {
+    0% {
+        color: red;
+        font-size: 20px;
+
+    }
+
+    25% {
+        color: orange;
+        transform: translateY(220px);
+    }
+
+    50% {
+        color: yellow;
+        font-size: 40px;
+
+    }
+
+    75% {
+        color: green;
+
+        transform: translate(50px, -120px) rotate(30deg);
+    }
+
+    85% {
+        color: blue;
+        /* transform: */
+        transform: translate(170px, 60px) rotate(390deg);
+    }
+
+    100% {
+        color: purple;
+        font-size: 20px;
+        transform: translate(10px);
+
+    }
+}

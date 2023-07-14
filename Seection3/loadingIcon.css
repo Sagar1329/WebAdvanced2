@@ -1,0 +1,91 @@
+html {
+    background: #ecf0f1;
+}
+
+body,
+h1,
+h2 {
+    font-family: Helvetica, Sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 36px;
+    opacity: 0;
+    animation: textload 1s 3s forwards;
+    text-align: center;
+}
+
+.container {
+    margin: 4em;
+    text-align: center;
+}
+
+.icon {
+    margin: auto;
+
+    height: 100px;
+    width: 100px;
+    border: solid 16px blue;
+    border-right-color: rgb(126, 126, 126);
+    border-left-color: rgb(126, 126, 126);
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    25% {
+        border-right-color: rgb(0, 0, 10);
+        border-left-color: rgb(255, 0, 0);
+        border-top-color: rgb(94, 255, 0);
+        ;
+        border-bottom-color: rgb(255, 0, 179);
+        ;
+    }
+
+    50% {
+        border-top-color: blue;
+        border-bottom-color: blue;
+        border-right-color: rgb(126, 126, 126);
+        border-left-color: rgb(126, 126, 126);
+    }
+
+    75% {
+        border-right-color: rgb(0, 0, 10);
+        border-left-color: rgb(255, 0, 0);
+        border-top-color: rgb(94, 255, 0);
+        ;
+        border-bottom-color: rgb(255, 0, 179);
+        ;
+    }
+
+    100% {
+
+        transform: rotate(1890deg);
+    }
+
+}
+
+
+@keyframes textload {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
